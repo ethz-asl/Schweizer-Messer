@@ -21,6 +21,8 @@ cs_add_executable(lsma
 )
 target_link_libraries(lsma ${PROJECT_NAME})
 
+#I think here we need to do something for install aswell
+#as is now it ends up in ./usr/lib/sm_matrix_archive/lsma
 set_target_properties(lsma
     PROPERTIES
     RUNTIME_OUTPUT_DIRECTORY "${CATKIN_DEVEL_PREFIX}/bin"
